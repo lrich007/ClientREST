@@ -15,7 +15,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		
 		//On fat un client
-    	ClientConfig config = new DefaultClientConfig(); //On crée un client grace a library jersey
+    	ClientConfig config = new DefaultClientConfig(); //On crï¿½e un client grace a library jersey
     	Client client = Client.create(config); // !attention : Client de Jersey
     	
     	//On prepare le chemin maintenant
@@ -28,25 +28,25 @@ public class Main {
     	//WebResource path = service.path("banque").path("virement/1/2/10");
     	
     	//============Authentification
-    	//WebResource path = service.path("banque").path("authentification/maria@maria.fr/maria");
+    	WebResource path = service.path("banque").path("authentification/maria@maria.fr/maria");
     	
     	//============Afficher la liste des clients
     	//WebResource path = service.path("banque").path("listAllClients");
     	
-    	//============Afficher un compte à partir de son ID 
+    	//============Afficher un compte ï¿½ partir de son ID 
     	//WebResource path = service.path("banque").path("compte/1");
     	
-    	//============Afficher une liste de comptes à partir de l'ID client
+    	//============Afficher une liste de comptes ï¿½ partir de l'ID client
     	//WebResource path = service.path("banque").path("listComptes/8");
     	
-    	//============Afficher un client à partir de son ID
+    	//============Afficher un client ï¿½ partir de son ID
     	//WebResource path = service.path("banque").path("client/4");
     	
-    	//============Afficher la liste de clienet à partir d'un mot cle dans le nom de son conseiller
+    	//============Afficher la liste de clienet ï¿½ partir d'un mot cle dans le nom de son conseiller
     	//WebResource path = service.path("banque").path("listAuthName/ric");
  
     	//============Modifier le nom du client
-    	WebResource path = service.path("banque").path("nomclient/8/louis");
+    	//WebResource path = service.path("banque").path("nomclient/8/louis");
 
     	
     	//============Modifier le prenom du client
